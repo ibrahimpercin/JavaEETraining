@@ -7,7 +7,8 @@ import javax.persistence.Id;
 public class Personel {
 	
 	@Id
-	private int personelID;
+	@GeneratedValue(strategy = IDENTITY)
+	private int personelid;
 	private String personelAdi;
 	private String personelSoyadi;
 	
