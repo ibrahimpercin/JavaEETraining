@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+
+		<!-- Database connectşon settings -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/veritabani?serverTimezone=UTC</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+
+		<!-- JDBC connection pool -->
+		<property name="hibernate.connection.pool_size">1</property>
+
+		<!-- SQL Dialect it means hibernate which database to use -->
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		
+		<property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+
+		<!-- Show all executed SQL to Console -->
+		<property name="show_sql">true</property>
+
+		<!-- for create Drop and re-create database on startup OR for update database-->
+		<property name="hbm2ddl.auto">update</property>
+
+		<!-- Mapping files -->
+		<mapping class="com.ibrahimpercin.Personel" />
+		
+	</session-factory>
+</hibernate-configuration>
