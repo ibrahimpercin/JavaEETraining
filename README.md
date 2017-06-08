@@ -1,4 +1,1 @@
--02_Maven -- >Learning using Maven dependencies
--05_JSP --> Build JSP pages learning
--06_JSF --> Build JSF pages learning
--05_Hibernate --> Build simple java application with  hibernate learning
+
